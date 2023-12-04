@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/static/styles/custom.css" />
+    <script
+      src="https://res.cdn.office.net/teams-js/2.9.1/js/MicrosoftTeams.min.js"
+      integrity="sha384-xnsUQ1tUqsrutBJl0vuf4/hufzLFWW8ZhGnhItfpQ0/BtWgM2uw6YT6BQ5YaKBSM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/static/scripts/teamsapp.js"></script>
+    <title>Microsoft Teams Tab</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <p>Completing auth...</p>
+    <script type="text/javascript">
+        microsoftTeams.app.initialize().then(() => {
+            microsoftTeams.authentication.notifySuccess("auth-result-1234");
+        });
+    </script>
+  </body>
+</html>
